@@ -3,7 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background: #a71b3e;
+  background-image: url(gradient-1024.png);
+  background-repeat: repeat-y;
+  background-size: auto !important;
+  background-color: #10cced;
+  //background: #a71b3e;
   color: white;
   font: 14px/1.5 Helvetica, Arial, sans-serif;
   margin: 20px auto;
