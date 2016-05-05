@@ -1,0 +1,15 @@
+<h1>Jobs</h1>
+<p>To get your advert posted, just tweet at <a href="https://twitter.com/minitheoryhq">@MinitheoryHQ</a> with details and I'll add you.</p>
+
+<% @jobs.each do |job| %>
+  <div class="job">
+    <p><%= job.embed_code.html_safe %>
+  </div>
+<% end %>
+<p><%= paginate @jobs %></p>
+
+<%
+=begin %>
+<p><%= link_to "Add a job", new_job_path %></p> %>
+<%
+=end %>
