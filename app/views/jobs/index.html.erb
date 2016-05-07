@@ -1,12 +1,21 @@
-<h1>UX Jobs in Singapore</h1>
-<p>To get your advert posted, just tweet at <a href="https://twitter.com/minitheoryhq">@MinitheoryHQ</a> with details and I'll add you.</p>
-
-<% @jobs.each do |job| %>
-  <div class="job">
-    <p><%= job.embed_code.html_safe %>
+<div class="container">
+  <div class="about">
+    <h1>uxjobs.sg</h1>
+    <h2>The best UX Jobs at startups and digital agencies in Singapore.</h2>
+    <hr />
+    <h3>To get your advert posted, just tweet at <a href="http://twitter.com/MinitheoryHQ">@MinitheoryHQ</a> with details and I'll add you.</h3>
+    <p class="note">Curated by <a href="http://minitheory.com" target="_blank"><img class="footer-logo" src="assets/minitheory-logo.png"></a></p>
   </div>
-<% end %>
-<p><%= paginate @jobs %></p>
+
+  <div class="jobs">
+    <% @jobs.each do |job| %>
+      <div class="job">
+        <p><%= job.embed_code.html_safe %>
+      </div>
+    <% end %>
+    <p><%= paginate @jobs %></p>
+  </div>
+</div>
 
 <%
 =begin %>

@@ -13,3 +13,141 @@
  *= require_tree .
  *= require_self
  */
+
+ /* RESET
+ ---------------------------------------- */
+ html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,
+ pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,
+ strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,
+ legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,
+ canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,
+ section,summary,time,mark,audio,video {
+   margin: 0 auto; padding: 0; border: 0; outline: 0; font-size: 100%;
+   vertical-align: baseline; background: transparent; font-weight:normal; }
+ body { line-height: 1; }
+ article,aside,details,figcaption,figure,footer,
+ header,hgroup,menu,nav,section { display: block; }
+ nav ul { list-style: none; }
+ blockquote,q { quotes: none; }
+ blockquote:before,blockquote:after,
+ q:before,q:after { content: ''; content: none; }
+ a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+ ins { background-color: #ff9; color: #000; text-decoration: none; }
+ mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+ del { text-decoration: line-through; }
+ abbr[title],dfn[title] { border-bottom: 1px dotted; cursor: help; }
+ table { border-collapse: collapse; border-spacing: 0; }
+ hr { display: block; border: 0; margin: 1em 0; padding: 0; }
+ input,select { vertical-align: middle; }
+ br.hurdle { clear: both; }
+ b, strong { font-weight: bold; }
+ i, em { font-style: italic; }
+ br.hurdle {clear:both;}
+
+
+ html {
+   -webkit-font-smoothing: antialiased;}
+
+ body {
+   width:100%;
+   font: 14px/1.5 Helvetica, Arial, sans-serif;
+   font-size: 1em;
+   margin: 0 auto;
+   padding: 0;
+   text-rendering: optimizeLegibility;
+   color: white;
+   background-image: url(gradient-1024.png);
+   background-repeat: repeat-y;
+   background-size: auto !important;
+   background-color: #a71b3e;
+   line-height: 1.4;
+   overflow: hidden;
+ }
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.about {
+  float: none;
+  width: 100%;
+}
+
+.jobs {
+  float: none;
+  width: 100%;
+}
+
+h1 {
+ font-size: 2em;
+ text-align: center;
+ font-weight: bold;
+ line-height: 2em;
+}
+
+h2 {
+ text-align: center;
+ line-height: 1.5em;
+}
+
+h3 {
+  display: none;
+}
+
+a {
+ color: #04518c;
+ text-decoration: none;
+}
+
+.note {
+ display: none;
+}
+
+@media only screen and (min-width:768px) {
+
+  body{
+    width: 768px;
+    margin: 25px auto;
+  }
+
+  .about {
+    float: left;
+    width: 243px;
+  }
+  .jobs {
+    float: right;
+    width: 500px;
+  }
+
+  .about {
+    padding: 0 15px 0 0;
+    text-align: left;
+    position: static !important;
+  }
+
+  .about hr {
+    display: block;
+    height: 1px;
+    border: none;
+    width: 75%;
+    background: #fff;
+    background: rgba(255,255,255,0.4);
+    margin: 20px auto;
+  }
+  h2 {
+    text-align: left;
+  }
+
+  h3 {
+    display: block;
+  }
+
+  .note {
+    padding: 20px 0 0 0;
+    font-size: 0.8em;
+    line-height: 2em;
+    display: block;
+    color: white;
+  }
+}
