@@ -50,7 +50,7 @@
 
  body {
    width:100%;
-   font: 14px/1.5 Helvetica, Arial, sans-serif;
+   font: Arial, sans-serif;
    font-size: 1em;
    margin: 0 auto;
    padding: 0;
@@ -80,15 +80,18 @@
 }
 
 h1 {
- font-size: 2em;
- text-align: center;
+ font-size: 2.5em;
+ text-align: left;
  font-weight: bold;
  line-height: 2em;
 }
 
 h2 {
- text-align: center;
- line-height: 1.5em;
+  font-size: 16px;
+  margin: 0 0 20px;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-align: left;
 }
 
 h3 {
@@ -104,10 +107,10 @@ a {
  display: none;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:810px) {
 
   body{
-    width: 768px;
+    width: 800px;
     margin: 25px auto;
   }
 
@@ -130,7 +133,7 @@ a {
     display: block;
     height: 1px;
     border: none;
-    width: 75%;
+    width: 100%;
     background: #fff;
     background: rgba(255,255,255,0.4);
     margin: 20px auto;
@@ -144,7 +147,7 @@ a {
   }
 
   .note {
-    padding: 20px 0 0 0;
+    padding: 25px 0 0 0;
     font-size: 0.8em;
     line-height: 2em;
     display: block;
